@@ -83,12 +83,17 @@
                 <div class="form-group">
                     <label class="control-label col-md-2">Reason</label>
                     <div class="col-md-10">
-                        <select class="form-control">
-                            <option>Adoration</option>
-                            <option>Ordering a White Russian</option>
-                            <option>Complaint</option>
-                            <option>I am lost</option>
-                        </select>
+                        <div class="dropdown">
+                            <button class="btn btn-success" id="pickButton">Pick one...</button>
+                            <button class="btn btn-success" data-toggle="dropdown"><span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" id="reasonDropdown">
+                                <li tabindex="-1"><a href="#">Adoration</a></li>
+                                <li tabindex="-1"><a href="#">Ordering a White Russian</a></li>
+                                <li tabindex="-1"><a href="#">Complaint</a></li>
+                                <li tabindex="-1"><a href="#">I am lost</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group">
@@ -130,6 +135,7 @@
 
 <script src="js/jquery-2.0.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/site.js"></script>
 </body>
 
 </html>
