@@ -32,29 +32,44 @@
     <section id="body" class="container">
         <h1>Contact Us</h1>
         <p>This doesn't really work, but it's an example of a form. Easy, man. Relax, man.</p>
-        <div class="col-md-6">
-            <form>
+        <div class="row">
+            <form class="form-horizontal">
                 <div class="form-group">
-                    <label for="nameInput">Your Name</label>
-                    <input type="text" class="form-control" placeholder="Your Name" name="nameInput"/></div>
-                <div class="form-group">
-                    <label for="emailInput">Email</label>
-                    <input type="text" class="form-control" placeholder="Your Email" name="emailInput"/>
+                    <label for="nameInput" class="control-label col-md-2">Your Name</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" placeholder="Your Name"
+                               name="nameInput" required/>
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label for="reasonSelect">Reason</label>
-                    <select class="form-control" name="reasonSelect">
-                        <option>Adoration</option>
-                        <option>Ordering a White Russian</option>
-                        <option>Complaint</option>
-                        <option>I am lost</option>
-                    </select>
+                    <label for="emailInput" class="control-label col-md-2">Email</label>
+                    <div class="col-md-10"><input type="text" class="form-control" placeholder="Your Email"
+                                                  name="emailInput" required/>
+                    </div>
                 </div>
                 <div class="form-group">
-                    <label for="messageArea">Message</label>
-                    <textarea cols="40" rows="6" class="form-control" name="reasonArea" placeholder="Message"></textarea>
+                    <label for="reasonSelect" class="control-label col-md-2">Reason</label>
+                    <div class="col-md-10">
+                        <select class="form-control" name="reasonSelect" required>
+                            <option>Adoration</option>
+                            <option>Ordering a White Russian</option>
+                            <option>Complaint</option>
+                            <option>I am lost</option>
+                        </select>
+                    </div>
                 </div>
-                <input type="submit" value="Submit"/>
+                <div class="form-group">
+                    <label for="messageArea" class="control-label col-md-2">Message</label>
+                    <div class="col-md-10">
+                        <textarea cols="40" rows="6" class="form-control" name="reasonArea"
+                                  placeholder="Message"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-10 col-md-offset-2">
+                        <input type="submit" value="Submit" class="btn btn-success"/>
+                    </div>
+                </div>
             </form>
         </div>
         <h3>Our fake address</h3>
