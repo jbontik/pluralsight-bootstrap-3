@@ -29,26 +29,34 @@
             </div>
         </div>
     </header>
-
-    <section id="body">
+    <section id="body" class="container">
         <h1>Contact Us</h1>
         <p>This doesn't really work, but it's an example of a form. Easy, man. Relax, man.</p>
-        <form>
-            <label>Your Name</label>
-            <input/>
-            <label>Email</label>
-            <input/>
-            <label>Reason</label>
-            <select>
-                <option>Adoration</option>
-                <option>Ordering a White Russian</option>
-                <option>Complaint</option>
-                <option>I am lost</option>
-            </select>
-            <label>Message</label>
-            <textarea cols="40" rows="6"></textarea>
-            <input type="submit" value="Submit"/>
-        </form>
+        <div class="col-md-6">
+            <form>
+                <div class="form-group">
+                    <label for="nameInput">Your Name</label>
+                    <input type="text" class="form-control" placeholder="Your Name" name="nameInput"/></div>
+                <div class="form-group">
+                    <label for="emailInput">Email</label>
+                    <input type="text" class="form-control" placeholder="Your Email" name="emailInput"/>
+                </div>
+                <div class="form-group">
+                    <label for="reasonSelect">Reason</label>
+                    <select class="form-control" name="reasonSelect">
+                        <option>Adoration</option>
+                        <option>Ordering a White Russian</option>
+                        <option>Complaint</option>
+                        <option>I am lost</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="messageArea">Message</label>
+                    <textarea cols="40" rows="6" class="form-control" name="reasonArea" placeholder="Message"></textarea>
+                </div>
+                <input type="submit" value="Submit"/>
+            </form>
+        </div>
         <h3>Our fake address</h3>
         <div>
             <address>
