@@ -37,7 +37,16 @@
         </div>
     </header>
     <section id="body" class="container">
-        <h1>Contact Us</h1>
+
+        <div class="page-header">
+            <ol class="breadcrumb">
+                <li><a href="/">Home</a>
+                </li>
+                <li class="active">Contact Us</li>
+            </ol>
+            <h1>Contact Us</h1>
+        </div>
+
         <p>This doesn't really work, but it's an example of a form. Easy, man. Relax, man.</p>
         <div class="row">
             <form class="form-horizontal">
@@ -45,7 +54,8 @@
                     <label for="nameInput" class="control-label col-md-2">Your Name</label>
                     <div class="col-md-10">
                         <div class="input-group">
-                            <span class="input-group-addon"><span class="glyphicon glyphicon-chevron-down"></span></span>
+                            <span class="input-group-addon"><span
+                                    class="glyphicon glyphicon-chevron-down"></span></span>
                             <input type="text" name="nameInput" class="form-control" placeholder="e.g. Your Name"/>
                             <span class="input-group-addon">!</span>
                         </div>
@@ -71,14 +81,16 @@
                             <label class="btn btn-success"><input type="radio">Maude</label>
                             <label class="btn btn-success"><input type="radio">Guezin</label>
                             <div class="btn-group btn-group-sm">
-                                <button class="btn btn-success">Other</button>
+                                <button class="btn btn-success">Other</span>
+                                </button>
                                 <button class="btn btn-success" data-toggle="dropdown"><span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li tabindex="-1"><a href="#">Walter</a></li>
-                                    <li tabindex="-1"><a href="#">Bunny</a></li>
-                                    <li tabindex="-1" class="divider"></li>
-                                    <li class="disabled" tabindex="-1"><a href="#">Taiga</a></li>
+                                    <li><a href="#" tabindex="-1">Walter</a></li>
+                                    <li><a href="#" tabindex="-1">Bunny</a></li>
+                                    <li class="divider"></li>
+                                    <li class="disabled"><a href="#" tabindex="-1">The Big Lebowski</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -92,14 +104,18 @@
                     <label class="control-label col-md-2">Reason</label>
                     <div class="col-md-10">
                         <div class="dropdown">
-                            <button class="btn btn-success" id="pickButton">Pick one...</button>
+                            <button class="btn btn-success" id="pickButton">Pick One...</button>
                             <button class="btn btn-success" data-toggle="dropdown"><span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu" id="reasonDropdown">
-                                <li tabindex="-1"><a href="#">Adoration</a></li>
-                                <li tabindex="-1"><a href="#">Ordering a White Russian</a></li>
-                                <li tabindex="-1"><a href="#">Complaint</a></li>
-                                <li tabindex="-1"><a href="#">I am lost</a></li>
+                                <li><a href="#" tabindex="-1">Adoration</a>
+                                </li>
+                                <li><a href="#" tabindex="-1">Ordering a White Russian</a>
+                                </li>
+                                <li><a href="#" tabindex="-1">Complaint</a>
+                                </li>
+                                <li><a href="#" tabindex="-1">I am lost</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
