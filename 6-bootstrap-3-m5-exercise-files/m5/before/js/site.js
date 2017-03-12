@@ -15,9 +15,16 @@
         return false;
     });
 
-    // $sentDialog.on("hidden.bs.modal", function () {
-    //     alert("close");
-    // })
+    var $sentAlert = $("#sentAlert");
+
+    $sentDialog.on("hidden.bs.modal", function () {
+        $sentAlert.show();
+    });
+
+    $sentAlert.on("close.bs.alert", function () {
+        $sentAlert.hide();
+        return false;
+    });
 
     contactForm.find("input[type=submit]").tooltip(
         {
